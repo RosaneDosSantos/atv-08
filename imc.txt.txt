@@ -1,0 +1,17 @@
+nome = str(input('Qual é o seu nome? '))
+peso = float(input('Qual é seu peso(Kg)? '))
+altura = float(input('Qual é a sua altura(Em metros, usando ponto, ex: 1.65)? '))
+
+imc = peso / (altura * altura)
+
+if imc < 18.5:
+    print('{} seu IMC é de {:.2f}. Você está abaixo do peso!'.format(nome, imc))
+elif 25 > imc >= 18.5:
+    print('{} seu IMC é de {:.2f}. Você está no peso ideal!'.format(nome, imc))
+elif 30 > imc >= 25:
+    print('{} seu IMC é de {:.2f}. Você está no sobrepeso!'.format(nome, imc))
+elif 40 > imc >= 30:
+    print('{} seu IMC é de {:.2f}. Você está na obesidade!'.format(nome, imc))
+else:
+    print('{} seu IMC é de {:.2f}. Você está na obesidade morbida!'.format(nome, imc))
+
